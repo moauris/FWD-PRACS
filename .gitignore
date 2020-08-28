@@ -1,0 +1,7 @@
+# ignore objects and debug folders
+#
+
+bin/
+obj/
+.vs/
+packages/
