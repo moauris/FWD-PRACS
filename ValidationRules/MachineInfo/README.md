@@ -177,3 +177,66 @@ public class PurchaseItem : INotifyPropertyChanged, IEditableObject
 }
 ```
 
+## Try Implement
+
+### Create MVVM
+
+There are actually 4 folders: Models, ViewModels, Views (obviously), and **ValidationRules**. In the example, all MVVM objects and the laid out outside, but for a good practice, let's split them into different folders to imitate larger projects.
+
+
+
+### Create Models
+
+First of all is the Models, think about the mission that we are trying to achieve, a Machine Info form with 7 input controls, and for OS Info it is a combo box with 3 elements.
+
+ Implement `INotifyPropertyChanged`, and `IEditableObject`. Don't forget to implement the event invoker.
+
+We are using one private struct for holding the data for editable object called `DataItem`.
+
+```c#
+class MachineInfo : INotifyPropertyChanged, IEditableObject
+    {
+
+
+        private struct DataItem
+        {
+            internal string HostName;
+            internal string Domain;
+            internal string IPv4;
+            internal string IPv6;
+            internal string OSName;
+            internal string OSVersion;
+            internal string OSBit;
+            internal DataItem NewItem()
+            {
+                return new DataItem
+                {
+                    HostName = "",
+                    Domain = "",
+                    IPv4 = "",
+                    IPv6 = "",
+                    OSName = "",
+                    OSVersion = "",
+                    OSBit = ""
+                };
+            }
+        }
+	}
+```
+
+Now, create two fields, copy item and current item.
+
+Create properties of the Machine Info object, in the setter, on property notify changed.
+
+Now, implement the begin, cancel, and end edit methods.
+
+Done.
+
+### Design Form View
+
+
+
+
+
+
+
