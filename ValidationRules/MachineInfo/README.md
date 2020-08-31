@@ -83,3 +83,97 @@ The Model - View - ViewModel design pattern is a pattern that is used to separat
 - Model: contains objects used in the UI interaction
 - ViewModel: The "engine" that helps with the interaction between Model and View. Models feed into the ViewModel, and ViewModel in turn supplies to the View.
 
+### The `IEditableObject` Inheritance
+
+For the object associated with the form, it implements the `System.ComponentModel.IEditableObject` interface.
+
+It has three implementations, `BeginEdit()`, `CancelEdit()`, and `CommitEdit()`.
+
+### How are the Model in the form structured.
+
+Actual data object is a struct named `ItemData`, which has the three fields. It has a static method which returns its own type:
+
+```c#
+private struct ItemData
+{
+    internal string Description;
+    internal DateTime OfferExpires;
+    internal double Price;
+
+    internal static ItemData NewItem()
+    {
+        var data = new ItemData
+        {
+            Description = "New item",
+            Price = 0,
+            OfferExpires = DateTime.Now + new TimeSpan(7, 0, 0, 0)
+        };
+
+        return data;
+    }
+}
+```
+
+<span style="color:darkgray">About Struct: Structs are like classes but they are value types</span>
+
+The main class is this, a class that implements `INotifyPropertyChanged` and `IEditableObject` interfaces.
+
+Two fields exist for this class:
+
+```C#
+public class PurchaseItem : INotifyPropertyChanged, IEditableObject
+{
+    private ItemData _copyData = ItemData.NewItem();
+    private ItemData _currentData = ItemData.NewItem();
+    //...
+    private struct ItemData
+    {
+        internal string Description;
+        internal DateTime OfferExpires;
+        internal double Price;
+
+        internal static ItemData NewItem()
+        {
+            var data = new ItemData
+            {
+                Description = "New item",
+                Price = 0,
+                OfferExpires = DateTime.Now + new TimeSpan(7, 0, 0, 0)
+            };
+
+            return data;
+        }
+    }
+}
+```
+
+Of course it carries with it all the properties of the Struct, but in the property getters and setters, they are manipulating the `_currentData` field.
+
+Now, you might be wondering what is the significance of the copy data and current data. Now, in the item transaction, begin edit, copies the current data to the copy data. Cancel edit simply does the reverse. End edit assign an empty item data to the copy data.
+
+```C#
+public class PurchaseItem : INotifyPropertyChanged, IEditableObject
+{
+    //...
+    #region IEditableObject Members
+
+    public void BeginEdit()
+    {
+        _copyData = _currentData;
+    }
+
+    public void CancelEdit()
+    {
+        _currentData = _copyData;
+        NotifyPropertyChanged("");
+    }
+
+    public void EndEdit()
+    {
+        _copyData = ItemData.NewItem();
+    }
+
+    #endregion
+}
+```
+

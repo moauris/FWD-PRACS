@@ -1,0 +1,77 @@
+﻿<Window x:Class="MachineInfo.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MachineInfo.Views"
+        mc:Ignorable="d"
+        Title="MainWindow" SizeToContent="WidthAndHeight"
+        WindowStyle="None" MouseDown="OnWindowMouseDown">
+    <StackPanel Width="680" Margin="8">
+        <TextBlock HorizontalAlignment="Center">
+            <Run Text="Welcome! " FontSize="32" FontWeight="Bold"/>
+            <Run Text="to the Machine Info Form." FontSize="28"/>
+            <LineBreak/>
+            <Run Text="Enter your Machine Info Below:" FontSize="28"/>
+        </TextBlock>
+        <StackPanel x:Name="sPanelFormArea" Margin="8"
+                    Loaded="OnFormAreaLoaded"
+                    Validation.Error="OnFormAreaError">
+            <StackPanel.Background>
+                <LinearGradientBrush StartPoint="0 0" EndPoint="1 1">
+                    <GradientStop Color="Silver" Offset="0"/>
+                    <GradientStop Color="DarkGray" Offset="0.32"/>
+                    <GradientStop Color="White" Offset="0.50"/>
+                    <GradientStop Color="DarkGray" Offset="0.68"/>
+                    <GradientStop Color="Silver" Offset="1"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <HeaderedContentControl Header="HostName">
+                <TextBox x:Name="tbxHostName">
+                </TextBox>
+            </HeaderedContentControl>
+            <HeaderedContentControl Header="Domain">
+                <TextBox x:Name="tbxDomain">
+                </TextBox>
+            </HeaderedContentControl>
+            <HeaderedContentControl Header="IPv4">
+                <TextBox x:Name="tbxIPv4">
+                </TextBox>
+            </HeaderedContentControl>
+            <HeaderedContentControl Header="IPv6">
+                <TextBox x:Name="tbxIPv6">
+                </TextBox>
+            </HeaderedContentControl>
+            <HeaderedContentControl Header="OSName">
+                <ComboBox x:Name="tbxOSName">
+                </ComboBox>
+            </HeaderedContentControl>
+            <HeaderedContentControl Header="OSVersion">
+                <ComboBox x:Name="tbxOSVersion">
+                </ComboBox>
+            </HeaderedContentControl>
+            <HeaderedContentControl Header="OSBit">
+                <ComboBox x:Name="tbxOSBit">
+                </ComboBox>
+            </HeaderedContentControl>
+
+        </StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="btnSubmit"
+                    Grid.Column="1">Submit</Button>
+            <Button x:Name="btnClear"
+                    Grid.Column="3">Clear</Button>
+            <Button x:Name="btnClose" Click="OnCloseButtonClicked"
+                    Grid.Column="5">Close</Button>
+        </Grid>
+    </StackPanel>
+</Window>
