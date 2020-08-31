@@ -60,8 +60,14 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Models\MachineInfo.cs" />
+    <Compile Include="ValidationRules\ValidateDomain.cs" />
+    <Compile Include="ValidationRules\ValidateHostName.cs" />
+    <Compile Include="ValidationRules\ValidateIPAddress.cs" />
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SelectOSInfo.xaml.cs">
+      <DependentUpon>SelectOSInfo.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -92,7 +98,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ValidationRules\" />
     <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
@@ -100,6 +105,13 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\SelectOSInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Views\tbl_osinfo.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

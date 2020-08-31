@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  xsi:noNamespaceSchemaLocation="tbl_osinfo.xsd" generated="2020-08-26T17:39:12">
+<tbl_osinfo>
+<ID>1</ID>
+<os_name>Amazon Linux</os_name>
+<os_version>2015.09 or later</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>2</ID>
+<os_name>CentOS</os_name>
+<os_version>6.x</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>3</ID>
+<os_name>CentOS</os_name>
+<os_version>7</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>4</ID>
+<os_name>CentOS</os_name>
+<os_version>7.5</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>5</ID>
+<os_name>HP-UX</os_name>
+<os_version>11.31</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>6</ID>
+<os_name>IBM AIX</os_name>
+<os_version>7.1</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>7</ID>
+<os_name>IBM AIX</os_name>
+<os_version>7.2</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>8</ID>
+<os_name>IBM PowerPC</os_name>
+<os_version>Red Hat Enterprise Linux 7.2 LE or later</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>9</ID>
+<os_name>IBM PowerPC</os_name>
+<os_version>SUSE Linux Enterprise Server 12 LE or later</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>10</ID>
+<os_name>Microsoft Windows</os_name>
+<os_version>10 Enterprise Edition</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>11</ID>
+<os_name>Microsoft Windows</os_name>
+<os_version>10 Professional Edition</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>12</ID>
+<os_name>Microsoft Windows</os_name>
+<os_version>7 Enterprise Edition</os_version>
+<os_architecture>32-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>13</ID>
+<os_name>Microsoft Windows</os_name>
+<os_version>7 Enterprise x64 Edition</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>14</ID>
+<os_name>Microsoft Windows</os_name>
+<os_version>7 Professional Edition</os_version>
+<os_architecture>32-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>15</ID>
+<os_name>Microsoft Windows</os_name>
+<os_version>7 Professional x64 Edition</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>16</ID>
+<os_name>Microsoft Windows</os_name>
+<os_version>7 Ultimate Edition</os_version>
+<os_architecture>32-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>17</ID>
+<os_name>Microsoft Windows</os_name>
+<os_version>7 Ultimate x64 Edition</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>18</ID>
+<os_name>Microsoft Windows</os_name>
+<os_version>8.1</os_version>
+<os_architecture>32-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>19</ID>
+<os_name>Microsoft Windows</os_name>
+<os_version>8.1</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>20</ID>
+<os_name>Microsoft Windows</os_name>
+<os_version>8.1 Enterprise Edition</os_version>
+<os_architecture>32-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>21</ID>
+<os_name>Microsoft Windows</os_name>
+<os_version>8.1 Enterprise Edition</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>22</ID>
+<os_name>Microsoft Windows</os_name>
+<os_version>8.1 Professional Edition</os_version>
+<os_architecture>32-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>23</ID>
+<os_name>Microsoft Windows</os_name>
+<os_version>8.1 Professional Edition</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>24</ID>
+<os_name>Microsoft Windows</os_name>
+<os_version>Server 2008 Enterprise Edition</os_version>
+<os_architecture>32-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>25</ID>
+<os_name>Microsoft Windows</os_name>
+<os_version>Server 2008 R2 Enterprise Edition</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>26</ID>
+<os_name>Microsoft Windows</os_name>
+<os_version>Server 2008 R2 Standard Edition</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>27</ID>
+<os_name>Microsoft Windows</os_name>
+<os_version>Server 2008 Standard Edition</os_version>
+<os_architecture>32-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>28</ID>
+<os_name>Microsoft Windows</os_name>
+<os_version>Server 2008 Standard Edition</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>29</ID>
+<os_name>Microsoft Windows</os_name>
+<os_version>Server 2012</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>30</ID>
+<os_name>Microsoft Windows</os_name>
+<os_version>Server 2012 R2</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>31</ID>
+<os_name>Microsoft Windows</os_name>
+<os_version>Server 2016 Datacenter Edition</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>32</ID>
+<os_name>Microsoft Windows</os_name>
+<os_version>Server 2016 Standard Edition</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>33</ID>
+<os_name>Oracle Enterprise Linux</os_name>
+<os_version>7.x</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>34</ID>
+<os_name>Oracle Enterprise Linux Server</os_name>
+<os_version>5</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>35</ID>
+<os_name>Oracle Enterprise Linux Server</os_name>
+<os_version>6</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>36</ID>
+<os_name>Oracle Enterprise Linux Server</os_name>
+<os_version>7</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>37</ID>
+<os_name>Oracle Solaris</os_name>
+<os_version>10</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>38</ID>
+<os_name>Oracle Solaris</os_name>
+<os_version>10</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>39</ID>
+<os_name>Oracle Solaris</os_name>
+<os_version>11</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>40</ID>
+<os_name>Oracle Solaris</os_name>
+<os_version>11</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>41</ID>
+<os_name>Red Hat Enterprise Linux</os_name>
+<os_version>5.11</os_version>
+<os_architecture>32-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>42</ID>
+<os_name>Red Hat Enterprise Linux</os_name>
+<os_version>5.11</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>43</ID>
+<os_name>Red Hat Enterprise Linux</os_name>
+<os_version>6</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>44</ID>
+<os_name>Red Hat Enterprise Linux</os_name>
+<os_version>7.2</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>45</ID>
+<os_name>Red Hat Enterprise Linux Server</os_name>
+<os_version>5</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>46</ID>
+<os_name>Red Hat Enterprise Linux Server</os_name>
+<os_version>6</os_version>
+<os_architecture>32-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>47</ID>
+<os_name>Red Hat Enterprise Linux Server</os_name>
+<os_version>6</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>48</ID>
+<os_name>Red Hat Enterprise Linux Server</os_name>
+<os_version>7</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>49</ID>
+<os_name>SUSE Linux Enterprise Server</os_name>
+<os_version>10</os_version>
+<os_architecture>32-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>50</ID>
+<os_name>SUSE Linux Enterprise Server</os_name>
+<os_version>10</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>51</ID>
+<os_name>SUSE Linux Enterprise Server</os_name>
+<os_version>11</os_version>
+<os_architecture>32-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>52</ID>
+<os_name>SUSE Linux Enterprise Server</os_name>
+<os_version>11</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>53</ID>
+<os_name>SUSE Linux Enterprise Server</os_name>
+<os_version>11</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>54</ID>
+<os_name>SUSE Linux Enterprise Server</os_name>
+<os_version>12.0</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>55</ID>
+<os_name>SUSE Linux Enterprise Server</os_name>
+<os_version>12.0</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>56</ID>
+<os_name>Ubuntu</os_name>
+<os_version>16.04 - LTS</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+<tbl_osinfo>
+<ID>57</ID>
+<os_name>Ubuntu</os_name>
+<os_version>14.04.5 - LTS</os_version>
+<os_architecture>64-bit</os_architecture>
+</tbl_osinfo>
+</dataroot>

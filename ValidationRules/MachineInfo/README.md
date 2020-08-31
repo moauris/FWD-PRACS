@@ -234,7 +234,43 @@ Done.
 
 ### Design Form View
 
+1. Headered content can be selected, disable it so that the tab will jump to next text box. **Set `Focusable` to false.**
+2. About Text Box object binding group: the binding happens not with text box itself, but is in `TextBox.Text`, this also applies to the validation rules.
 
+### Create Validation Rules On Text Boxes
+
+<span style="color:white;background:darkred"> - Problem #1 - </span> How to implement a Validation Rule with a customized constructor:
+
+The scenario is that I have an IP address validation where ipv6 and ipv4 both needed. To avoid writing two similar validation rules, I planned to use a Type property which is an enum for ipv4 and ipv6.
+
+<span style="color:white;background:darkgreen">  - Solution #1 - </span> The solution is, you can't construct a validation rule with a parameter. The validation in XAML must take a parenthesis less constructor.
+
+```xaml
+<HeaderedContentControl Header="IPv4">
+                <TextBox x:Name="tbxIPv4">
+                    <Binding Path="IPv4" Mode="TwoWay">
+                        <Binding.ValidationRules>
+                            <rules:ValidateIPAddress Type="IPv4">
+                            </rules:ValidateIPAddress>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox>
+            </HeaderedContentControl>
+```
+
+But you can make this property public and assign to it. And yes, it intelli-sense to enum.
+
+### Create Validation Rules On Combo Boxes
+
+Even thought it's never been done in practice, but I suspect the validation rule can apply. 
+
+The rule is simple, user must select a value.
+
+However, the Combo Boxes in previous implementations have a problem of cannot display empty value. The default is Combo Box index 0.
+
+Also, I must learn how to apply a xml file binding as opposed to using an object model.
+
+### Binding Master - Detail using xml
 
 
 

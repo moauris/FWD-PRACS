@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MachineInfo.Views"
+        xmlns:rules="clr-namespace:MachineInfo.ValidationRules"
         mc:Ignorable="d"
         Title="MainWindow" SizeToContent="WidthAndHeight"
         WindowStyle="None" MouseDown="OnWindowMouseDown">
@@ -26,35 +27,52 @@
                     <GradientStop Color="Silver" Offset="1"/>
                 </LinearGradientBrush>
             </StackPanel.Background>
-            <HeaderedContentControl Header="HostName">
+            <HeaderedContentControl Header="HostName" Focusable="False">
                 <TextBox x:Name="tbxHostName">
+                    <TextBox.Text>
+                        <Binding Path="HostName" Mode="TwoWay">
+                            <Binding.ValidationRules>
+                                <rules:ValidateHostName/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
                 </TextBox>
             </HeaderedContentControl>
-            <HeaderedContentControl Header="Domain">
+            <HeaderedContentControl Header="Domain" Focusable="False">
                 <TextBox x:Name="tbxDomain">
+                    <TextBox.Text>
+                        <Binding Path="Domain" Mode="TwoWay">
+                            <Binding.ValidationRules>
+                                <rules:ValidateDomain/>
+                            </Binding.ValidationRules>
+                        </Binding>
+                    </TextBox.Text>
                 </TextBox>
             </HeaderedContentControl>
             <HeaderedContentControl Header="IPv4">
                 <TextBox x:Name="tbxIPv4">
+                    <Binding Path="IPv4" Mode="TwoWay">
+                        <Binding.ValidationRules>
+                            <rules:ValidateIPAddress Type="IPv4">
+                            </rules:ValidateIPAddress>
+                        </Binding.ValidationRules>
+                    </Binding>
                 </TextBox>
             </HeaderedContentControl>
             <HeaderedContentControl Header="IPv6">
                 <TextBox x:Name="tbxIPv6">
+                    <Binding Path="IPv6" Mode="TwoWay">
+                        <Binding.ValidationRules>
+                            <rules:ValidateIPAddress Type="IPv6">
+                            </rules:ValidateIPAddress>
+                        </Binding.ValidationRules>
+                    </Binding>
                 </TextBox>
             </HeaderedContentControl>
-            <HeaderedContentControl Header="OSName">
-                <ComboBox x:Name="tbxOSName">
-                </ComboBox>
+            <HeaderedContentControl Header="Operating System">
+                <TextBox x:Name="tbxOS" MouseDoubleClick="OnTextBoxOSFocused">
+                </TextBox>
             </HeaderedContentControl>
-            <HeaderedContentControl Header="OSVersion">
-                <ComboBox x:Name="tbxOSVersion">
-                </ComboBox>
-            </HeaderedContentControl>
-            <HeaderedContentControl Header="OSBit">
-                <ComboBox x:Name="tbxOSBit">
-                </ComboBox>
-            </HeaderedContentControl>
-
         </StackPanel>
         <Grid>
             <Grid.ColumnDefinitions>

@@ -44,5 +44,11 @@ namespace MachineInfo.Views
         {
             this.Close();
         }
+
+        private void OnTextBoxOSFocused(object sender, RoutedEventArgs e)
+        {
+            var osSelectWindow = new SelectOSInfo();
+            osSelectWindow.ShowDialog();
+        }
     }
 }
