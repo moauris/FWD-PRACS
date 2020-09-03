@@ -7,32 +7,36 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Window.Resources>
-        <XmlDataProvider x:Key="OSList" Source="data/tbl_osinfo.xml"
-                         XPath="/dataroot/tbl_osinfo"/>
+        <XmlDataProvider x:Key="OSList" Source="data/structured_osinfo.xml"
+                         XPath="/osList/osInfo"/>
+        <DataTemplate x:Key="ItemSourceTemplate">
+            <TextBlock>
+                <TextBlock.Text>
+                    <Binding XPath="@name"/>
+                </TextBlock.Text>
+            </TextBlock>
+        </DataTemplate>
     </Window.Resources>
     <StackPanel Margin="10" DataContext="{Binding Source={StaticResource OSList}}">
         <HeaderedContentControl Header="Operating System" Margin="10">
-            <ComboBox x:Name="cbxOS" Margin="10" ItemsSource="{Binding}">
-                <ComboBox.ItemTemplate>
-                    <DataTemplate>
-                        <TextBlock >
-                            <TextBlock.Text>
-                                <Binding XPath="os_name[not(os_name = preceding::os_name)]"/>
-                            </TextBlock.Text>
-                        </TextBlock>
-                        
-                    </DataTemplate>
-                </ComboBox.ItemTemplate>
+            <ComboBox x:Name="cbxOS" Margin="10" ItemsSource="{Binding}"
+                ItemTemplate="{StaticResource ItemSourceTemplate}">
+                
             </ComboBox>
         </HeaderedContentControl>
         <HeaderedContentControl Header="OS Version" Margin="10">
-            <ComboBox x:Name="cbxOSversion" Margin="10">
-
+            <ComboBox x:Name="cbxOSversion" Margin="10" 
+                      DataContext="{Binding ElementName=cbxOS, Path=SelectedItem}"
+                      ItemsSource="{Binding XPath=osVersion}"
+                ItemTemplate="{StaticResource ItemSourceTemplate}">
             </ComboBox>
         </HeaderedContentControl>
         <HeaderedContentControl Header="OS Architecture" Margin="10">
-            <ComboBox x:Name="cbxOSarch" Margin="10">
-
+            <ComboBox x:Name="cbxOSarch" Margin="10"
+                      DataContext="{Binding ElementName=cbxOSversion, Path=SelectedItem}"
+                      ItemsSource="{Binding XPath=osArchitecture}"
+                ItemTemplate="{StaticResource ItemSourceTemplate}">
+                
             </ComboBox>
         </HeaderedContentControl>
     </StackPanel>

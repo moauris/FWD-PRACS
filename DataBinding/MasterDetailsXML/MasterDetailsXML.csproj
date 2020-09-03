@@ -96,6 +96,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Data\structured_osinfo.xml" />
+    <Resource Include="Data\export_osinfo.xslt" />
     <Content Include="Data\tbl_osinfo.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

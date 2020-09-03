@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<osList>
+  <osInfo name="Amazon Linux">
+    <osVersion name="2015.09 or later">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+  </osInfo>
+  <osInfo name="CentOS">
+    <osVersion name="6.x">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+    <osVersion name="7">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+    <osVersion name="7.5">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+  </osInfo>
+  <osInfo name="HP-UX">
+    <osVersion name="11.31">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+  </osInfo>
+  <osInfo name="IBM AIX">
+    <osVersion name="7.1">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+    <osVersion name="7.2">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+  </osInfo>
+  <osInfo name="IBM PowerPC">
+    <osVersion name="Red Hat Enterprise Linux 7.2 LE or later">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+    <osVersion name="SUSE Linux Enterprise Server 12 LE or later">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+  </osInfo>
+  <osInfo name="Microsoft Windows">
+    <osVersion name="10 Enterprise Edition">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+    <osVersion name="10 Professional Edition">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+    <osVersion name="7 Enterprise Edition">
+      <osArchitecture name="32-bit" />
+    </osVersion>
+    <osVersion name="7 Enterprise x64 Edition">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+    <osVersion name="7 Professional Edition">
+      <osArchitecture name="32-bit" />
+    </osVersion>
+    <osVersion name="7 Professional x64 Edition">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+    <osVersion name="7 Ultimate Edition">
+      <osArchitecture name="32-bit" />
+    </osVersion>
+    <osVersion name="7 Ultimate x64 Edition">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+    <osVersion name="8.1">
+      <osArchitecture name="32-bit" />
+      <osArchitecture name="64-bit" />
+    </osVersion>
+    <osVersion name="8.1 Enterprise Edition">
+      <osArchitecture name="32-bit" />
+      <osArchitecture name="64-bit" />
+    </osVersion>
+    <osVersion name="8.1 Professional Edition">
+      <osArchitecture name="32-bit" />
+      <osArchitecture name="64-bit" />
+    </osVersion>
+    <osVersion name="Server 2008 Enterprise Edition">
+      <osArchitecture name="32-bit" />
+    </osVersion>
+    <osVersion name="Server 2008 R2 Enterprise Edition">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+    <osVersion name="Server 2008 R2 Standard Edition">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+    <osVersion name="Server 2008 Standard Edition">
+      <osArchitecture name="32-bit" />
+      <osArchitecture name="64-bit" />
+    </osVersion>
+    <osVersion name="Server 2012">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+    <osVersion name="Server 2012 R2">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+    <osVersion name="Server 2016 Datacenter Edition">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+    <osVersion name="Server 2016 Standard Edition">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+  </osInfo>
+  <osInfo name="Oracle Enterprise Linux">
+    <osVersion name="7.x">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+  </osInfo>
+  <osInfo name="Oracle Enterprise Linux Server">
+    <osVersion name="5">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+    <osVersion name="6">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+    <osVersion name="7">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+  </osInfo>
+  <osInfo name="Oracle Solaris">
+    <osVersion name="10">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+    <osVersion name="11">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+  </osInfo>
+  <osInfo name="Red Hat Enterprise Linux">
+    <osVersion name="5.11">
+      <osArchitecture name="32-bit" />
+      <osArchitecture name="64-bit" />
+    </osVersion>
+    <osVersion name="6">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+    <osVersion name="7.2">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+  </osInfo>
+  <osInfo name="Red Hat Enterprise Linux Server">
+    <osVersion name="5">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+    <osVersion name="6">
+      <osArchitecture name="32-bit" />
+      <osArchitecture name="64-bit" />
+    </osVersion>
+    <osVersion name="7">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+  </osInfo>
+  <osInfo name="SUSE Linux Enterprise Server">
+    <osVersion name="10">
+      <osArchitecture name="32-bit" />
+      <osArchitecture name="64-bit" />
+    </osVersion>
+    <osVersion name="11">
+      <osArchitecture name="32-bit" />
+      <osArchitecture name="64-bit" />
+    </osVersion>
+    <osVersion name="12.0">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+  </osInfo>
+  <osInfo name="Ubuntu">
+    <osVersion name="16.04 - LTS">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+    <osVersion name="14.04.5 - LTS">
+      <osArchitecture name="64-bit" />
+    </osVersion>
+  </osInfo>
+</osList>
