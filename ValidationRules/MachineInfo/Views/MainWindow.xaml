@@ -84,9 +84,9 @@
                 <ColumnDefinition Width="3*"/>
                 <ColumnDefinition Width="1*"/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="btnSubmit"
+            <Button x:Name="btnSubmit" Click="OnSubmitButtonClicked"
                     Grid.Column="1">Submit</Button>
-            <Button x:Name="btnClear"
+            <Button x:Name="btnClear" Click="OnClearButtonClicked"
                     Grid.Column="3">Clear</Button>
             <Button x:Name="btnClose" Click="OnCloseButtonClicked"
                     Grid.Column="5">Close</Button>

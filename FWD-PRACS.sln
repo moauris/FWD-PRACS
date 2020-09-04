@@ -7,7 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MachineInfo", "ValidationRu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MasterDetailsXML", "DataBinding\MasterDetailsXML\MasterDetailsXML.csproj", "{0A574CA5-9F13-4B9B-A830-8CDB81B5DEB9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQtoXMLpractice", "LINQtoXMLpractice\LINQtoXMLpractice.csproj", "{64ABFB8C-C191-4EE5-92B1-238F8CA652D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQtoXMLpractice", "LINQtoXMLpractice\LINQtoXMLpractice.csproj", "{64ABFB8C-C191-4EE5-92B1-238F8CA652D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XsltPractice", "XML_Technologies\xslt_practice\XsltPractice.csproj", "{6D3CBD9D-EF99-4E33-A452-CAC6E002D631}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{64ABFB8C-C191-4EE5-92B1-238F8CA652D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64ABFB8C-C191-4EE5-92B1-238F8CA652D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64ABFB8C-C191-4EE5-92B1-238F8CA652D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D3CBD9D-EF99-4E33-A452-CAC6E002D631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D3CBD9D-EF99-4E33-A452-CAC6E002D631}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D3CBD9D-EF99-4E33-A452-CAC6E002D631}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D3CBD9D-EF99-4E33-A452-CAC6E002D631}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

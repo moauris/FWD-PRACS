@@ -60,9 +60,11 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Models\MachineInfo.cs" />
+    <Compile Include="Models\OperatingSystemInfo.cs" />
     <Compile Include="ValidationRules\ValidateDomain.cs" />
     <Compile Include="ValidationRules\ValidateHostName.cs" />
     <Compile Include="ValidationRules\ValidateIPAddress.cs" />
+    <Compile Include="ValidationRules\ValidateOScbxEmpty.cs" />
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
@@ -111,7 +113,9 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Views\tbl_osinfo.xml" />
+    <Content Include="Data\structured_osinfo.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -51,33 +51,13 @@ namespace MachineInfo.Models
             }
         }
 
-        public string OSName
+        public string OSInformation
         {
-            get { return _currentItem.OSName; }
+            get { return _currentItem.OSInformation; }
             set 
             { 
-                _currentItem.OSName = value;
-                OnPropertyChanged("OSName");
-            }
-        }
-
-        public string OSVersion
-        {
-            get { return _currentItem.OSVersion; }
-            set 
-            { 
-                _currentItem.OSVersion = value;
-                OnPropertyChanged("OSVersion");
-            }
-        }
-
-        public string OSBit
-        {
-            get { return _currentItem.OSBit; }
-            set 
-            { 
-                _currentItem.OSBit = value;
-                OnPropertyChanged("OSBit");
+                _currentItem.OSInformation = value;
+                OnPropertyChanged("OSInformation");
             }
         }
 
@@ -87,9 +67,7 @@ namespace MachineInfo.Models
             internal string Domain;
             internal string IPv4;
             internal string IPv6;
-            internal string OSName;
-            internal string OSVersion;
-            internal string OSBit;
+            internal string OSInformation;
             internal static DataItem NewItem()
             {
                 return new DataItem
@@ -98,9 +76,7 @@ namespace MachineInfo.Models
                     Domain = "",
                     IPv4 = "",
                     IPv6 = "",
-                    OSName = "",
-                    OSVersion = "",
-                    OSBit = ""
+                    OSInformation = ""
                 };
             }
         }

@@ -49,6 +49,18 @@ namespace MachineInfo.Views
         {
             var osSelectWindow = new SelectOSInfo();
             osSelectWindow.ShowDialog();
+            tbxOS.Text = osSelectWindow.OSInfomation;
+        }
+
+        private void OnClearButtonClicked(object sender, RoutedEventArgs e)
+        {
+            MachineInfoData machineinfo = sPanelFormArea.DataContext as MachineInfoData;
+            machineinfo.CancelEdit();
+        }
+
+        private void OnSubmitButtonClicked(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

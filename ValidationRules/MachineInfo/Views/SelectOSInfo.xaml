@@ -4,36 +4,43 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MachineInfo.Views"
+        xmlns:rules="clr-namespace:MachineInfo.ValidationRules"
         mc:Ignorable="d"
         Title="SelectOSInfo" SizeToContent="WidthAndHeight"
         WindowStyle="None">
     <Window.Resources>
-        <XmlDataProvider x:Key="OSList" Source="/tbl_osinfo.xml" XPath="dataroot/tbl_osinfo"/>
-
+        <XmlDataProvider x:Key="OSList" Source="../Data/structured_osinfo.xml" 
+                         XPath="/osList/osInfo"/>
+        <DataTemplate x:Key="XPATHtempGetName">
+            <TextBlock Text="{Binding XPath=@name}"/>
+        </DataTemplate>
     </Window.Resources>
 
-    <StackPanel Width="370" Margin="10" DataContext="{Binding Source={StaticResource OSList}}">
+    <StackPanel Width="370" Margin="10" 
+                DataContext="{Binding Source={StaticResource OSList}}">
         <TextBlock HorizontalAlignment="Center" Margin="10">
             <Run Text="Enter Operating System Information" FontWeight="Bold" FontSize="18"/>
         </TextBlock>
-        <TextBlock x:Name="txbDisplayOSName" FontSize="16" Margin="10">
+        <TextBlock x:Name="cxbDisplayOSName" FontSize="16" Margin="10">
             
         </TextBlock>
         <HeaderedContentControl Header="OSName">
-            <ComboBox x:Name="tbxOSName" ItemsSource="{Binding}">
-                <ComboBox.ItemTemplate>
-                    <DataTemplate>
-                        <TextBlock Text="{Binding XPath=@os_name}"/>
-                    </DataTemplate>
-                </ComboBox.ItemTemplate>
+            <ComboBox x:Name="cbxOSName" ItemsSource="{Binding}" 
+                      ItemTemplate="{StaticResource XPATHtempGetName}">
             </ComboBox>
         </HeaderedContentControl>
         <HeaderedContentControl Header="OSVersion">
-            <ComboBox x:Name="tbxOSVersion">
+            <ComboBox x:Name="cbxOSVersion" 
+                      DataContext="{Binding ElementName=cbxOSName, Path=SelectedItem}"
+                      ItemsSource="{Binding XPath=osVersion}"
+                      ItemTemplate="{StaticResource XPATHtempGetName}">
             </ComboBox>
         </HeaderedContentControl>
         <HeaderedContentControl Header="OSBit">
-            <ComboBox x:Name="tbxOSBit">
+            <ComboBox x:Name="cbxOSBit"
+                      DataContext="{Binding ElementName=cbxOSVersion, Path=SelectedItem}"
+                      ItemsSource="{Binding XPath=osArchitecture}"
+                      ItemTemplate="{StaticResource XPATHtempGetName}">
             </ComboBox>
         </HeaderedContentControl>
         <Grid Margin="10">
@@ -46,7 +53,7 @@
                 <ColumnDefinition Width="3*"/>
                 <ColumnDefinition Width="1*"/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="btnSubmit"
+            <Button x:Name="btnSubmit" Click="OnSubmitButtonClicked"
                     Grid.Column="1">Submit</Button>
             <Button x:Name="btnClose" Click="OnCloseButtonClicked"
                     Grid.Column="5">Close</Button>

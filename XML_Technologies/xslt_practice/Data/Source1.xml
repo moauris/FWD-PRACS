@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<customers>
+  <customer>
+    <FirstName>Momi</FirstName>
+    <LastName>Cat</LastName>
+    <Age>16</Age>
+    <Status>Active</Status>
+
+  </customer>
+</customers>
