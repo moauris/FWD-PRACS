@@ -33,7 +33,7 @@ namespace AsyncPrac
             Console.WriteLine("Task: {0} has been completed", successIndex);
 
 
-
+            Task.WaitAll(Task.Delay(5000));
             Console.WriteLine("Main Thread Ends...");
 
 
